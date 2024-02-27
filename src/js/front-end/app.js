@@ -86,11 +86,8 @@ const CustomActiveClass = (Glide, Components, Events) => {
 
     // Highlight active section
     sections.forEach(section => {
-        console.log(section)
       const navLink = document.querySelector(`nav a[href="#${section.id}"]`);
-
       if (isInViewport(section)) {
-        console.log("true")
         navLink.parentElement.classList.add('active');
       } else {
         navLink.parentElement.classList.remove('active');
@@ -210,20 +207,4 @@ const CustomActiveClass = (Glide, Components, Events) => {
     });
     glide.mount({CustomActiveClass,});
     check_resize(glide);
-
-    //if is in a tab block, adjust size
-    const parent=img_sliders[i].parentElement
-    if(parent&&parent.classList.contains("purdue-home-tabs__panel")){
-      const id=parent.getAttribute("aria-labelledby");
-      if(id){
-        const panelButton=document.querySelector(`#${id}`)
-          if(panelButton){
-            panelButton.addEventListener("click", ()=>{
-              check_resize(glide);
-            })
-          }
-        
-      }
-     
-    }
   }}
