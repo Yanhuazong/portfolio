@@ -1,0 +1,29 @@
+/* -- Color Defaults -- */
+
+// Colors
+$black:	hsl(0, 0%, 0%);
+$white:	hsl(0, 0%, 100%);
+$boiler-gold:#CFB991;
+$aged-gold:#8e6f3e;
+$rush-gold:#daaa00;
+$field-gold:#ddb945;
+$dust-gold:#ebd99f;
+$steel-gray:#555960;
+$cool-gray:#6f727b;
+$steam-gray:#c4bfc0;
+$railway-gray:#9d9795;
+$opaque:rgba(0,0,0,0.65);
+$transparent: rgba(0,0,0,0);
+$gray-footer:#2e2e2e;
+$black-ter:$steel-gray;
+$grey-lighter:#ededed;
+$grey-secondary:#f7f7f7;
+$secondary-background-gray:$grey-secondary;
+$primary-background-gray:$grey-lighter;
+
+// Color Elements
+$link: $aged-gold;
+$success: $aged-gold;
+$warning: $rush-gold;
+$danger: $rush-gold;
+$link-hover:$link;

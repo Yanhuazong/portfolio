@@ -1,0 +1,266 @@
+h1{
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 900;
+    text-align: left;
+    font-size: 3rem;
+    line-height:1.1;
+    margin-bottom: 1.5rem;
+}
+h2{
+    text-align: left;
+    font-size: 2rem;
+    text-align: center;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    svg{
+        display:none;
+        @include touch{
+            display:block;
+        }
+        width:30px;
+        &.is-hide{
+            display:none;
+        }
+        &.is-active{
+            @include touch{
+                display:block;
+            }
+        }
+
+    }
+
+
+}
+.navbar{
+    position: fixed;
+    top:0;
+    padding:0 3.25rem;
+    width:100%;
+    @include touch{
+        padding:0;
+    }
+    a{
+        font-weight:600;
+        color:black;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .navbar-item{
+        &:hover{
+            background-color: #1974d3;
+            a{
+                color:white;
+            }
+        }
+    }
+    .navbar-brand{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        @include touch{
+            padding:0 1.5rem;
+        }
+        @include mobile{
+            padding:0 1.25rem;
+        }
+    }
+    &.sticky{
+        background:#53ccec;
+        position: sticky;
+        a{
+            color:black;
+        }
+        .navbar-item{
+            &.active{
+                background-color: #0b1354;
+                a{
+                    color:white;
+                }
+            }
+        }
+    }
+    .navbar-menu{
+        @include touch{
+            padding:0 1.5rem;
+        }
+        @include mobile{
+            padding:0 1.25rem;
+        }
+    }
+}
+.section{
+    padding:6rem 3.25rem;
+    @include touch{
+        padding:6rem 1.5rem;
+    }
+    @include mobile{
+        padding:3rem 1.25rem;
+    }
+}
+.home{
+    display:flex;
+    align-items: center;
+    @include touch{
+        height:auto;
+        padding-top:9rem;
+    }
+    @include mobile{
+        display:block;
+        padding-top:6rem;
+    }
+    height:calc(100vh - 54px);
+    .columns{
+        justify-content: space-between;
+        .is-7-tablet{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+.projects{
+    background:#f7f7f7;
+    margin-top: 60px;
+    padding-top: 20px; 
+    overflow: hidden;
+    .purdue-home-image-slider {
+        overflow: visible;
+      }
+}
+.button-wrap{
+    margin-top:1.5rem;
+    @include mobile{
+        margin-bottom:2rem;
+    }
+}
+.button{
+    padding:0.75rem 1.5rem;
+    font-size: 1.125rem;
+    margin-right:1rem;
+    background:#0b1354;
+    color:white;
+    &:hover{
+        background:white;
+        color:black;
+    }
+}
+footer{
+    .section{
+        padding-top:2rem;
+        padding-bottom: 2rem;
+        .container{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            @include touch{
+                flex-direction: column;
+            }
+            &>p{
+                a{
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    color:black;
+                    font-weight:600;
+                }
+            }
+        }
+        .connect{
+            display: flex;
+            align-items: center;
+            p{
+                flex-shrink:0;
+                font-weight:700;    
+            }
+        }
+    }
+    .media{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        li{
+            margin-left:1rem;
+        }
+        a{
+            display:block;
+            svg{
+                width:30px;
+            }
+            &:hover{
+                transform: translateY(-10%);
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+.glide__slide{
+    height:auto !important;
+}
+.purdue-home-cta-card{
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border-radius: 4px;
+    overflow: hidden;
+    display:flex;
+    align-items: stretch;
+    background: white;
+    height:100%;
+    @include touch{
+        flex-direction: column;
+    }
+    .purdue-home-image-slider__card-image{
+        flex:1;
+        position: relative;
+        .image{
+            min-height: 400px;
+            height:100%;
+            @include touch{
+                min-height: 0;
+            }
+            img{
+                object-fit: cover;
+            }
+        }
+        .overlay{
+            width:100%;
+            height:100%;
+            background: rgba(255,255,255,0.5);
+            position: absolute;
+            top:0;
+            left:0;
+            display:none;
+            justify-content: center;
+            align-items: center;
+        }
+        &:hover{
+            .overlay{
+                display:flex;
+            }
+        }
+    }
+    .flex-container--align-bottom{
+        width: 30%;
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        height: auto;
+        position: relative;
+        @include touch{
+            width:100%;
+        }
+    }
+
+}   
+.glide__track{
+    overflow: visible !important;
+}
+.slider-controls{
+    margin-top:3rem;
+    @include mobile{
+        margin-top:2rem;
+    }
+}
