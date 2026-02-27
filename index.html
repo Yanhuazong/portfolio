@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
 	<title>Hannah Y. Zong's Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Passionate educator and web development expert with a strong background in front and back-end technologies.">
+	<meta name="description" content="Assistant Professor of Practice at Purdue University specializing in interactive data visualization, pedagogy, and AI-informed design.">
 	<meta property="og:type" content="website">
 	<meta property="og:locale" content="en_US">
 	<meta property="og:site_name" content="Hannah Y. Zong's Portfolio">
 	<meta property="og:title" content="Hannah Y. Zong's Portfolio">
-	<meta property="og:description" content="Passionate educator and web development expert with a strong background in front and back-end technologies.">
+	<meta property="og:description" content="Assistant Professor of Practice at Purdue University specializing in interactive data visualization, pedagogy, and AI-informed design.">
 	<meta property="og:url" content="https://yanhuazong.github.io/portfolio/">
 	<meta property="og:image" content="yz-portfolio.png">
 	<meta property="og:image:width" content="1499">
@@ -17,15 +18,11 @@
 	<meta property="og:image:alt" content="Hannah Y. Zong's Portfolio">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Hannah Y. Zong's Portfolio">
-	<meta name="twitter:description" content="Passionate educator and web development expert with a strong background in front and back-end technologies.">
+	<meta name="twitter:description" content="Assistant Professor of Practice at Purdue University specializing in interactive data visualization, pedagogy, and AI-informed design.">
 	<meta name="twitter:image" content="yz-portfolio.png">
 	<meta name="twitter:image:alt" content="Yanhua Zong's Portfolio">
-	<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.3/css/all.min.css" />
+	<link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+	<link rel="shortcut icon" href="favicon/favicon.svg" type="image/svg+xml">
 	<link rel="stylesheet" href="build/app.css" />
 </head>
 
@@ -33,154 +30,138 @@
 	<nav class="navbar is-transparent" role="navigation">
 		<div class="container">
 			<div class="navbar-brand">
-				<a href="#" class="navbar-item" rel="home"><span>H. </span><span>Zong</span></a>
-
-				<button class="icon is-large navbar-burger navbar-open" data-target="navbar-menu" aria-expanded="false"
-					aria-label="menu">
-					<svg class="burger-icon" xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-						<path
-							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+				<a href="#home" class="navbar-item logo-mark" rel="home" aria-label="HZ Home">HZ</a>
+				<button class="menu-toggle navbar-burger navbar-open" data-target="navbar-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+					<span class="sr-only burger-label">Open menu</span>
+					<span class="sr-only close-label is-hide">Close menu</span>
+					<svg class="burger-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
+						<path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
 					</svg>
-					<svg class="close-icon is-hide" xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-						<path
-							d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+					<svg class="close-icon is-hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true" focusable="false">
+						<path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
 					</svg>
 				</button>
 			</div>
 			<div class="navbar-menu" id="navbar-menu" data-menu="navbar-menu">
 				<ul class="navbar-end menu-items">
-					<li class="menu-item navbar-item">
-						<a href="#home" class="is-active-page">Home</a>
-					</li>
-					<li class="menu-item navbar-item"><a href="#projects">Projects</a></li>
-					<li class="menu-item navbar-item"><a href="Resume.pdf">Resume</a></li>
+					<li class="menu-item navbar-item"><a href="#home" class="is-active-page">Home</a></li>
+					<li class="menu-item navbar-item"><a href="#research">Research</a></li>
+					<li class="menu-item navbar-item"><a href="#teaching">Teaching</a></li>
+					<li class="menu-item navbar-item"><a href="#mentorship">Mentorship</a></li>
+					<li class="menu-item navbar-item"><a href="#awards">Awards</a></li>
+					<li class="menu-item navbar-item"><a href="#cv">CV</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<!-- home section start -->
 	<section class="home section" id="home">
 		<div class="container">
-			<div class="columns is-multiline">
-				<div class="column is-7-tablet is-full-mobile">
-					<div class="home-content">
-						<h1>Hello, my name is<br> Hannah Y. Zong</h1>
-						<p class="subtitle">Assistant Professor of Practice, Purdue University</p>
-						<p>Passionate educator and web development expert with a strong background in front and back-end technologies. Currently teaching and mentoring the next generation of developers, with a focus on interactive learning, innovative web technologies, and fostering critical thinking. Dedicated to enhancing the educational experience through practical applications and emerging tech.</p>
-						<div class="button-wrap">
-							<a class="button" href="#projects">Projects</a>
-							<a class="button" href="Resume.pdf">Resume</a>
-						</div>
-
+			<div class="home-content">
+				<div class="home-top-grid">
+					<div class="home-intro">
+						<h1>Hannah Yanhua Zong</h1>
+						<p class="identity-line">Assistant Professor of Practice</p>
+						<p class="identity-line">School of Applied and Creative Computing</p>
+						<p class="identity-line">Purdue University</p>
+						<p class="lead-text">I am an Assistant Professor of Practice at Purdue University specializing in interactive data visualization and web-based analytical systems. My work integrates visualization research, studio-based pedagogy, and AI-informed design practices. I mentor student teams on competition-level visual analytics projects and develop curriculum focused on critical reasoning and ethical visualization in the age of generative AI.</p>
 					</div>
+					<ul class="highlight-list">
+						<li>IEEE VAST Challenge Awards (2025)</li>
+						<li>IEEE VIS &amp; HICSS Publications</li>
+						<li>Courses: CGT 270, 370, 470, 353, 575</li>
+						<li>Research: Visualization pedagogy &amp; knowledge graph analytics</li>
+					</ul>
 				</div>
-				<div class="column is-4-tablet is-full-mobile">
-					<div class="box">
-						<h2>Skills</h2>
-						<figure><img src="wordcloud.png" alt="" /></figure>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</section>
 
-	<!-- services section start -->
-	<section class="projects" id="projects">
-		<div class="section">
-			<div class="container">
-				<h2 class="title">Projects</h2>
-				<div class="purdue-home-image-slider">
-					<div class="glide">
-						<div class="glide__track" data-glide-el="track">
-							<div class="glide__slides">
-								<div class="glide__slide">
-									<div class="purdue-home-cta-card purdue-home-image-slider__card">
-										<a class="purdue-home-image-slider__card-image" href="https://www.purdue.edu" target="_blank">
-											<figure class="image is-16by9">
-												<img decoding="async"
-													src="projects/home.png"
-													alt="purdue homepage">
-											</figure>
-											<div class="overlay"><button class="button">Learn More</button></div>
-										</a>
-										<div class="flex-container flex-container--align-bottom">
-											<p class="title">Spearheaded the development of a cutting-edge WordPress theme, incorporating versatile custom Gutenberg blocks to cater to diverse content requirements.</p>
-										</div>
-									</div>
-								</div>
-								<div class="glide__slide">
-									<div class="purdue-home-cta-card purdue-home-image-slider__card">
-										<a class="purdue-home-image-slider__card-image" href="https://www.purdue.edu/space" target="_blank">
-											<figure class="image is-16by9">
-												<img decoding="async"
-													src="projects/space.png"
-													alt="space website">
-											</figure>
-											<div class="overlay"><button class="button">Learn More</button></div>
-										</a>
-										<div class="flex-container flex-container--align-bottom">
-											<p class="title">Designed and implemented archive block capable of archiving diverse content with filters and a search bar.</p>
-										</div>
-									</div>
-								</div>
-								<div class="glide__slide">
-									<div class="purdue-home-cta-card purdue-home-image-slider__card">
-										<a class="purdue-home-image-slider__card-image" href="https://stories.purdue.edu/" target="_blank">
-											<figure class="image is-16by9">
-												<img decoding="async"
-													src="projects/story.png"
-													alt="Purdue stoties site.">
-											</figure>
-											<div class="overlay"><button class="button">Learn More</button></div>
+	<section class="section" id="research">
+		<div class="container">
+			<h2>Research &amp; Publications</h2>
+			<h3>Visualization Research</h3>
+			<div class="research-grid">
+				<article class="research-card">
+					<figure><img src="projects/melodyway.png" alt="Melody Way project visualization" /></figure>
+					<h4>Melody Way</h4>
+					<p>Melody Way visualizes influence and genre evolution over time using coordinated views and expressive interaction design. The project demonstrates how analytical rigor and visual storytelling can coexist, making complex, high-dimensional data both interpretable and engaging.</p>
+					<p class="note">Award: IEEE VAST Challenge Award (2025).</p>
+					<p>Proceedings of the IEEE Visual Analytics Science and Technology (VAST) Challenge</p>
+				</article>
+				<article class="research-card">
+					<figure><img src="projects/blossomnet.png" alt="BlossomNet project visualization" /></figure>
+					<h4>BlossomNet</h4>
+					<p>BlossomNet introduces a floral glyph system to represent multivariate network behavior in collaborative analytic workflows. The design contribution combines aesthetic encoding and structural clarity to support pattern discovery and comparative reasoning.</p>
+					<p class="note">Design contribution: floral glyph visual language for relation and intensity mapping.</p>
+					<p>Proceedings of the IEEE Visual Analytics Science and Technology (VAST) Challenge</p>
+				</article>
+				<article class="research-card">
+					<figure><img src="projects/hicss.png" alt="Invasive Species HICSS project visualization" /></figure>
+					<h4>Invasive Species (HICSS)</h4>
+					<p>This work investigates interactive techniques for tracking spread, influence, and intervention timing in ecological datasets. It translates complex temporal and geospatial signals into interpretable visual forms for decision support and educational use.</p>
+					<p>Proceedings of the Hawaii International Conference on System Sciences (HICSS)</p>
+				</article>
+			</div>
+			<h3>Research Direction</h3>
+			<p class="direction">My research explores interactive systems for understanding influence, collaboration, and temporal evolution in complex datasets. Current directions include explainable AI visualization, knowledge graph analytics, and structured scaffolding approaches in visualization education.</p>
+		</div>
+	</section>
 
-										</a>
-										<div class="flex-container flex-container--align-bottom">
-											<p class="title">Implemented dynamic landing pages auto generated by filters for easy content updates.</p>
-										</div>
-									</div>
-								</div>
-								<div class="glide__slide">
-									<div class="purdue-home-cta-card purdue-home-image-slider__card">
-										<a class="purdue-home-image-slider__card-image" href="https://marcom.purdue.edu/" target="_blank">
-											<figure class="image is-16by9">
-												<img decoding="async"
-													src="projects/marcom.png"
-													alt="marcom website.">
-											</figure>
-											<div class="overlay"><button class="button">Learn More</button></div>
+	<section class="section" id="teaching">
+		<div class="container">
+			<h2>Teaching</h2>
+			<h3>Teaching Philosophy</h3>
+			<p>My teaching philosophy emphasizes structured scaffolding, critique-driven development, and ethical design practice. Across introductory, intermediate, and advanced courses, I guide students from foundational principles to research-informed interactive systems design, integrating responsible AI use and real-world application contexts.</p>
+			<h3>Courses</h3>
+			<div class="course-list">
+				<div class="course-item"><strong>CGT 270</strong> Foundations of visualization and dashboard communication for evidence-based interpretation.</div>
+				<div class="course-item"><strong>CGT 370</strong> Intermediate analytical reasoning through multi-view analysis and critique workflows.</div>
+				<div class="course-item"><strong>CGT 470</strong> Advanced studio focused on emerging technologies and research-oriented visualization systems.</div>
+				<div class="course-item"><strong>CGT 353</strong> Full-stack application development for interactive data products and user-centered delivery.</div>
+				<div class="course-item"><strong>CGT 575</strong> Online visualization course redesign centered on structure, access, and learner progression.</div>
+			</div>
+		</div>
+	</section>
 
-										</a>
-										<div class="flex-container flex-container--align-bottom">
-											<p class="title">Served as the lead developer for developing the Marketing and Communications website, a resource hub for campus partners.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="slider-controls">
-							<button class="glide__arrow arrow--left">prev</button>
-							<div class="glide__bullets" data-glide-el="controls[nav]">
+	<section class="section" id="mentorship">
+		<div class="container">
+			<h2>Student Projects &amp; Mentorship</h2>
+			<div class="mentorship-grid">
+				<article>
+					<h3>VAST 2025 Projects</h3>
+					<p><strong>Melody Way</strong> and <strong>BlossomNet</strong> were developed with student teams in competition-level settings, emphasizing analytical rigor, design clarity, and iterative critique. Student contributions were recognized through award-winning outcomes and conference visibility.</p>
+				</article>
+				<article>
+					<h3>Coalition Project</h3>
+					<p>This project supported community-oriented collaboration through data-informed communication tools that connected stakeholder priorities with actionable insights.</p>
+				</article>
+				<article>
+					<h3>Undergraduate Research Mentorship</h3>
+					<p>Mentorship integrates undergraduate researchers into publication and studio pipelines, including direct project advising for students such as Sophia, when appropriate to project scope and authorship.</p>
+				</article>
+			</div>
+		</div>
+	</section>
 
-								<button class="glide__bullet slider__bullet is-active glide__bullet--active"
-									data-glide-dir="=0" aria-label="slide 1"></button>
-								<button class="glide__bullet slider__bullet is-next" data-glide-dir="=1"
-									aria-label="slide 2"></button>
-								<button class="glide__bullet slider__bullet" data-glide-dir="=2"
-									aria-label="slide 3"></button>
-								<button class="glide__bullet slider__bullet" data-glide-dir="=3"
-									aria-label="slide 4"></button>
-							</div>
-							<button class="glide__arrow arrow--right">next</button>
-						</div>
-					</div>
+	<section class="section section-awards" id="awards">
+		<div class="container">
+			<h2>Awards &amp; Recognition</h2>
+			<ul class="awards-list">
+				<li>VAST Challenge Award – Expressive Design (2025)</li>
+				<li>VAST Challenge Award – Comprehensive Treatment of Time (2025)</li>
+			</ul>
 				</div>
 			</div>
 		</div>
+	</section>
 
+	<section class="section section-cv" id="cv">
+		<div class="container cv-block">
+			<h2>CV</h2>
+			<p>Download full curriculum vitae.</p>
+			<p><a class="button" href="CV_HZ_2026.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></p>
+		</div>
 	</section>
 
 	<footer>
@@ -188,34 +169,17 @@
 			<div class="container">
 				<div class="connect">
 					<p>Connect with me</p>
-					<ul class="media">
-						<li>
-							<a href="mailto:yanhuazong@gmail.com" target="_blank" aria-label="email">
-								<svg xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-									<path
-										d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM218 271.7L64.2 172.4C66 156.4 79.5 144 96 144H352c16.5 0 30 12.4 31.8 28.4L230 271.7c-1.8 1.2-3.9 1.8-6 1.8s-4.2-.6-6-1.8zm29.4 26.9L384 210.4V336c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V210.4l136.6 88.2c7 4.5 15.1 6.9 23.4 6.9s16.4-2.4 23.4-6.9z" />
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/hannah-zong-870b86111/" target="_blank"
-								aria-label="linkedIn">
-								<svg xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-									<path
-										d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-								</svg>
-							</a>
-						</li>
+					<ul class="media text-links">
+						<li><a href="mailto:yanhuazong@gmail.com" target="_blank" rel="noopener">Email</a></li>
+						<li><a href="https://www.linkedin.com/in/hannah-zong-870b86111/" target="_blank" rel="noopener">LinkedIn</a></li>
 					</ul>
 				</div>
-				<p>&copy; 2025 <a href="#" target="_blank"><span>H. </span><span>Zong</span></a> | All Rights Reserved
-				</p>
+				<p>&copy; 2026 <a href="#home"><span>Hannah </span><span>Zong</span></a> | All Rights Reserved</p>
 			</div>
 		</div>
 	</footer>
 
 	<script src="build/app.js"></script>
+</body>
 
-	</html>
+</html>
